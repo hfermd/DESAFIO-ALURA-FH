@@ -100,18 +100,53 @@ font-size: 18px;
     main {
         flex-direction: column;
         width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .mensaje
     {
-    width: 30%;
+        width: 80%; /* Ajustado para pantallas más pequeñas */
+        margin-left: auto;
+        margin-right: auto;
+        position: static; /* Cambia a static para no fijar la posición en pantallas pequeñas */
+        margin-top: 20px;
     }
     .botones {
         flex-direction: column;
         width: 100%;
-        margin-left: 7%;
+        margin-left: 0;
+        align-items: center;
     }
     .text-area {
         font-size: 1.2rem;
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .copiar {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        position: relative;
+    }   
+}
+@media (max-width: 768px) {
+    .mensaje {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas muy pequeñas */
+    }
+    .btn-desencriptar, .btn-encriptar, .copiar {
+        width: 90%; /* Botones más anchos y centrados */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-area {
+        font-size: 1rem; /* Reduce un poco el tamaño de fuente en pantallas pequeñas */
+    }
+    .mensaje {
+        width: 100%;
+        background-size: contain; /* Asegura que la imagen se ajuste al contenedor */
     }
 }
