@@ -105,10 +105,10 @@ font-size: 18px;
     }
     .mensaje
     {
-        width: 80%; /* Ajustado para pantallas más pequeñas */
+        width: 80%; 
         margin-left: auto;
         margin-right: auto;
-        position: static; /* Cambia a static para no fijar la posición en pantallas pequeñas */
+        position: static;
         margin-top: 20px;
     }
     .botones {
@@ -132,10 +132,10 @@ font-size: 18px;
 }
 @media (max-width: 768px) {
     .mensaje {
-        width: 100%; /* Ocupa el 100% del ancho en pantallas muy pequeñas */
+        width: 100%;
     }
     .btn-desencriptar, .btn-encriptar, .copiar {
-        width: 90%; /* Botones más anchos y centrados */
+        width: 90%; 
         margin-left: auto;
         margin-right: auto;
     }
@@ -143,10 +143,10 @@ font-size: 18px;
 
 @media (max-width: 480px) {
     .text-area {
-        font-size: 1rem; /* Reduce un poco el tamaño de fuente en pantallas pequeñas */
+        font-size: 1rem; 
     }
     .mensaje {
         width: 100%;
-        background-size: contain; /* Asegura que la imagen se ajuste al contenedor */
+        background-size: contain; 
     }
 }
