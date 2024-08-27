@@ -36,6 +36,7 @@ main
 width: 20%;
 background: white;
 background-image:url("assets/muñeco.png");
+background-size: contain;
 background-repeat: no-repeat;
 border: none;
 border-radius: 1.5rem;
